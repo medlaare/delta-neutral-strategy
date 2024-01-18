@@ -1,0 +1,39 @@
+{
+  "name": "order-execution-tests",
+  "version": "1.0.0",
+  "description": "Order execution tests for delta neutral strategies on FTX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesbachini/Order-Execution-Tests.git"
+  },
+  "keywords": [
+    "crypto",
+    "trading",
+    "bot",
+    "ftx",
+    "delta",
+    "neutral",
+    "order",
+    "execution",
+    "trading",
+    "strategy"
+  ],
+  "author": "James Bachini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesbachini/Order-Execution-Tests/issues"
+  },
+  "homepage": "https://github.com/jamesbachini/Order-Execution-Tests#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2",
+    "ws": "^7.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0"
+  }
+}
