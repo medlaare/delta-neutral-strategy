@@ -1,6 +1,4 @@
-# Delta Neutral Strategy with Compound Finance
-
-## Overview:
+# Overview:
 
 Implementing a Delta Neutral Strategy using DeFi protocols like Compound Finance or Aave involves leveraging the lending and borrowing functionalities offered by these platforms. Below is a simplified example of how you might construct a Delta Neutral Strategy using Compound Finance on the Ethereum network:
 
