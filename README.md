@@ -11,7 +11,7 @@ A Delta Neutral Strategy with Compound Finance involves employing a financial ap
 - you can choose strategies for optimizing `gas` costs, such as batched transactions or utilizing layer 2 solutions.
 - Consider factors like gas costs and market volatility when determining the rebalancing frequency.
 
-# How it works
+# How It works
 Implementing a Delta Neutral Strategy using DeFi protocols like Compound Finance or Aave involves leveraging the lending and borrowing functionalities offered by these platforms. Below is a simplified example of how you might construct a Delta Neutral Strategy using Compound Finance on the Ethereum network:
 
 ## Components:
