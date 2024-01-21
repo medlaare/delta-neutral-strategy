@@ -12,7 +12,7 @@ A Delta Neutral Strategy with Compound Finance involves employing a financial ap
 - Consider factors like gas costs and market volatility when determining the rebalancing frequency.
 
 # How It works
-Implementing a Delta Neutral Strategy using DeFi protocols like Compound Finance or Aave involves leveraging the lending and borrowing functionalities offered by these platforms. Below is a simplified example of how you might construct a Delta Neutral Strategy using Compound Finance on the Ethereum network:
+Implementing a delta-neutral strategy using DeFi protocols, such as Compound Finance or Aave, involves leveraging the lending and borrowing functionalities offered by these platforms. Below is a simplified example of how you might construct a delta-neutral strategy using Compound Finance on the Arbitrum, Ethereum, Polygon (Matic) networks.
 
 ## Components:
 
@@ -38,29 +38,7 @@ Implementing a Delta Neutral Strategy using DeFi protocols like Compound Finance
    - Monitor interest rates on Compound and adjust the position to optimize interest costs.
    - Consider using interest-bearing tokens (cTokens) to earn interest on deposited ETH.
 
-## Smart Contract Integration:
 
-- Use the Compound Finance API or directly interact with the Compound smart contracts to deposit, borrow, and repay.
-- Utilize Aave or other lending protocols as alternatives based on your preference.
-
-```solidity
-// Simplified Solidity code for Compound interaction
-contract DeltaNeutralCompoundStrategy {
-    address public ethAddress;
-    address public compoundCEthAddress; // Address of cETH contract on Compound
-
-    constructor(address _ethAddress, address _compoundCEthAddress) {
-        ethAddress = _ethAddress;
-        compoundCEthAddress = _compoundCEthAddress;
-    }
-
-    function adjustDelta() external {
-        // Fetch ETH price and calculate Delta
-        // Adjust position based on calculated Delta
-        // Execute borrow or repay functions on Compound
-    }
-}
-```
 ## Risk Management:
 - Set thresholds for Delta adjustments to manage risk.
 - Monitor the health of the position to avoid liquidation on lending platforms.
