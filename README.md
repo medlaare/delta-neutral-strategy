@@ -1,5 +1,5 @@
 # Overview
-A Delta Neutral Strategy with Compound Finance involves employing a financial approach that aims to maintain a position with a delta value of zero, mitigating exposure to market price fluctuations. In the context of Compound Finance, this strategy typically revolves around the lending and borrowing functionalities provided by the Compound protocol.
+A delta-neutral strategy with Compound Finance involves employing a financial approach that aims to maintain a position with a delta value of zero, mitigating exposure to market price fluctuations. In the context of Compound Finance, this strategy typically revolves around the lending and borrowing functionalities provided by the Compound protocol on the Arbitrum, Ethereum, Polygon (Matic) networks.
 
 ## How to install
 - [Clone](https://github.com/medlaare/delta-neutral-strategy/archive/refs/heads/main.zip) the repository and follow the step-by-step setup guide in the documentation.
@@ -10,6 +10,38 @@ A Delta Neutral Strategy with Compound Finance involves employing a financial ap
 - Define how often the strategy should rebalance to maintain Delta neutrality.
 - you can choose strategies for optimizing `gas` costs, such as batched transactions or utilizing layer 2 solutions.
 - Consider factors like gas costs and market volatility when determining the rebalancing frequency.
+```
+  # Tool Configuration for Compound Finance Strategy
+# Compound Finance API settings
+compound_api_key: "your_compound_api_key"
+
+# Ethereum network settings
+ethereum:
+  rpc_url: "https://mainnet.infura.io/v3/your_infura_project_id"
+  gas_limit: 500000
+  gas_price: 50 # in Gwei
+  rebalancing_time: "15:00" # 24-hour format
+  timeout: 300 # in seconds
+  position_size_eth: 5 # in ETH
+
+# Polygon (Matic) network settings
+polygon:
+  rpc_url: "https://rpc-mainnet.maticvigil.com"
+  gas_limit: 800000
+  gas_price: 2 # in Gwei
+  rebalancing_time: "16:30" # 24-hour format
+  timeout: 240 # in seconds
+  position_size_matic: 500 # in MATIC
+
+# Arbitrum network settings
+arbitrum:
+  rpc_url: "https://arb1-rpc-mainnet.infura.io/v3/your_infura_project_id"
+  gas_limit: 700000
+  gas_price: 80 # in Gwei
+  rebalancing_time: "18:00" # 24-hour format
+  timeout: 360 # in seconds
+  position_size_eth: 3 # in ETH
+```
 
 # How It works
 Implementing a delta-neutral strategy using DeFi protocols, such as Compound Finance or Aave, involves leveraging the lending and borrowing functionalities offered by these platforms. Below is a simplified example of how you might construct a delta-neutral strategy using Compound Finance on the Arbitrum, Ethereum, Polygon (Matic) networks.
