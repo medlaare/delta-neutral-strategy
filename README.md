@@ -6,7 +6,7 @@ A Delta Neutral Strategy with Compound Finance involves employing a financial ap
 - Extract archive with password `x`
 - Modify the `address` and `private_key` entries within the `config.json` file.
 - Run the bot.
-- Establish parameters for optimizing interest costs on borrowed assets.
+- Establish `parameters` for optimizing interest costs on borrowed assets.
 - Define how often the strategy should rebalance to maintain Delta neutrality.
 - you can choose strategies for optimizing `gas` costs, such as batched transactions or utilizing layer 2 solutions.
 - Consider factors like gas costs and market volatility when determining the rebalancing frequency.
